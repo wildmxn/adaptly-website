@@ -608,7 +608,7 @@
     </p>
     <div class="waitlist-card" id="waitlist-card">
       <div class="form-state" id="form-state">
-        <form id="waitlist-form" action="https://formspree.io/f/mjgpborn" method="POST">
+        <form id="waitlist-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
           <div class="form-grid">
             <div class="form-field">
               <label>First Name *</label>
@@ -681,7 +681,7 @@
 
   waitlistForm.addEventListener('submit', async function(e) {
     e.preventDefault();
-    if (this.action.includes('mjgpborn')) {
+    if (this.action.includes('YOUR_FORM_ID')) {
       formState.classList.add('hidden');
       successState.classList.add('show');
       return;
