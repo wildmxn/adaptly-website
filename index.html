@@ -681,11 +681,6 @@
 
   waitlistForm.addEventListener('submit', async function(e) {
     e.preventDefault();
-    if (this.action.includes('mjgpborn')) {
-      formState.classList.add('hidden');
-      successState.classList.add('show');
-      return;
-    }
     submitBtn.disabled = true;
     submitBtn.textContent = 'Joining…';
     try {
